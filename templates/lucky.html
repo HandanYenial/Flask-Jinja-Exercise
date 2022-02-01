@@ -1,0 +1,15 @@
+{%extends 'base.html'%}
+{%block title%}The lucky number{%endblock%}
+{%block content%}
+    <h1> Your lucky number is:{{lucky_num}} </h1>
+    <p>{{msg}}</p>
+
+    {%if lucky_num == 3%}
+    <h2>That's my favorite number too!</h2>
+    <img src="https://media.giphy.com/media/l2JhL1AzTxORUTDlC/giphy-downsized-large.gif" alt="">
+    {%else%}
+    <h2>I really don't like that number</h2>
+    <img src="https://media.giphy.com/media/WpaVhEcp3Qo2TjwyI1/giphy.gif" alt="">
+    {%endif%}
+    
+{%endblock%}
